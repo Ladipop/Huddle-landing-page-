@@ -1,0 +1,507 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* :focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem hsla(322, 100%, 66%, 0.332);
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(assets/poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Medium;
+  src: url(assets/OpenSans/static/OpenSans-Medium.ttf);
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(assets/OpenSans/static/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(assets/OpenSans/static/OpenSans-Bold.ttf);
+}
+html {
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: hsl(192, 100%, 9%);
+}
+html,
+.body {
+  width: 100%;
+}
+
+.whole-page {
+  margin-top: 3rem;
+}
+.logo {
+  width: 10.5rem;
+}
+.btn {
+  padding: 1rem 4rem;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  border-radius: 50px;
+  color: hsl(207, 100%, 98%);
+  font-size: 0.8rem;
+  box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: hsl(321, 100%, 78%);
+}
+/* ******************************************* */
+/************* Navigation Styling *********** */
+/* ***************************************** */
+.top-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.nav-button {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid hsl(322, 100%, 66%);
+  background: none;
+  border-radius: 50px;
+  color: hsl(322, 100%, 66%);
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  border: 2px solid hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+}
+
+/* ******************************************* */
+/************* Header Styling *********** */
+/* ***************************************** */
+.header-section {
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+.header-intro {
+  font-family: OpenSans-Bold;
+  font-size: 2.5rem;
+  max-width: 1125px;
+}
+.header-paragraph {
+  min-width: 50%;
+  width: 60%;
+  margin: 0 auto;
+}
+.header-button {
+  align-self: center;
+  margin-bottom: 3rem;
+}
+.header-img {
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+/* ******************************************* */
+/************* Statistics Styling *********** */
+/* ***************************************** */
+.statistics {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.statistics-icon {
+  width: 2rem;
+}
+.statistics-number {
+  font-family: OpenSans-Bold;
+  font-size: 4rem;
+}
+.statistics-discription {
+  margin: 0 auto;
+  color: hsla(192, 100%, 9%, 0.7);
+}
+/* ******************************************* */
+/************* Card Section Styling *********** */
+/* ***************************************** */
+.top-backgroud-mobile-img-1,
+.bottom-backgroud-mobile-img-1,
+.top-backgroud-mobile-img-2,
+.bottom-backgroud-mobile-img-2,
+.hidden-img,
+.hidden-newsletter {
+  display: none;
+}
+
+.top-backgroud-img-1,
+.bottom-backgroud-img-1,
+.bottom-backgroud-img-2,
+.top-backgroud-img-2 {
+  width: 100%;
+}
+.top-backgroud-img-1,
+.top-backgroud-img-2 {
+  margin-bottom: -10px;
+}
+
+.bottom-backgroud-img-2 {
+  margin-bottom: 3rem;
+}
+
+.card-container-colored {
+  background-color: hsl(207, 100%, 98%);
+}
+.card-container {
+  display: flex;
+  gap: 6rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 6rem;
+  justify-content: space-between;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  min-width: 10rem;
+  width: 50%;
+}
+.card-info-header {
+  font-family: Poppins-Bold;
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+.card-info-img {
+  width: 50%;
+  min-width: 10rem;
+}
+.card-info-paragraph {
+  font-size: 1rem;
+}
+/* ******************************************* */
+/************* Sign up Section *********** */
+/* ***************************************** */
+
+.sign-up {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.sign-up-header,
+.sign-up-button {
+  margin-bottom: 2rem;
+}
+.sign-up-header {
+  font-family: Poppins-Bold;
+  font-size: 2rem;
+}
+
+/* ******************************************* */
+/************* Footer Section *********** */
+/* ***************************************** */
+
+.footer-background-img {
+  width: 100%;
+  margin-bottom: -10px;
+}
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(207, 100%, 98%);
+  font-size: 0.65rem;
+  padding: 3.4rem 3rem;
+  width: 100%;
+  margin-top: -5px;
+}
+.footer-logo-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.6rem;
+}
+.footer-cover {
+  display: flex;
+  align-items: stretch;
+  /* justify-content: space-between; */
+  justify-content: space-between;
+  width: 100%;
+  gap: 3rem;
+  line-height: 1.3rem;
+}
+.footer-contact-info {
+  width: 30%;
+}
+.newsletter {
+  width: 50%;
+}
+
+.footer-paragraph {
+  margin-bottom: 1.5rem;
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.cont--1 {
+  margin-bottom: 1rem;
+}
+.newsletter-paragraph {
+  width: 60%;
+}
+.outside-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.newsletter-header {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.footer-input {
+  display: flex;
+  gap: 1.5rem;
+}
+.input {
+  width: 65%;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-btn {
+  padding: 0.5rem 3rem;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 5px;
+  border: none;
+  color: hsl(207, 100%, 98%);
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.subscribe-btn:hover {
+  cursor: pointer;
+  background-color: hsl(321, 100%, 78%);
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+/* ******************************************* */
+/************* Attribution Styling *********** */
+/* ***************************************** */
+.attribution {
+  font-size: 9px;
+  text-align: center;
+  background-color: hsl(192, 100%, 9%);
+  padding-bottom: 1.5rem;
+  color: aliceblue;
+  margin-top: -5px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width: 710px) {
+  .whole-page {
+    margin-top: 1.5rem;
+  }
+  .btn {
+    padding: 1rem 3rem;
+  }
+  .top-navigation {
+    margin-bottom: 5rem;
+  }
+  .header-section {
+    gap: 1.5rem;
+  }
+  .header-intro {
+    font-size: 2rem;
+  }
+  .header-paragraph {
+    width: 75%;
+  }
+  .header-button {
+    margin-bottom: 1.5rem;
+  }
+  .statistics-number {
+    font-size: 2.5rem;
+  }
+  .statistics-icon {
+    width: 1.2rem;
+  }
+  .statistics-discription {
+    font-size: 0.6rem;
+  }
+  .card-container {
+    gap: 3rem;
+    padding: 3rem;
+  }
+  .card-info-paragraph {
+    font-size: 0.8rem;
+  }
+  .sign-up-header {
+    font-size: 1.5rem;
+  }
+  .footer-background-img {
+    margin-bottom: -5px;
+  }
+}
+
+@media all and (max-width: 645px) {
+  .header-paragraph {
+    font-size: 0.9rem;
+  }
+  .footer-cover {
+    gap: 1rem;
+    line-height: 1.1rem;
+  }
+  .footer {
+    padding: 1.7rem 1.5rem;
+  }
+  .footer-contact-info {
+    width: 50%;
+  }
+  .input {
+    min-width: 50%;
+  }
+}
+@media all and (max-width: 600px) {
+  .footer {
+    font-size: 0.55rem;
+  }
+  .newsletter {
+    width: 60%;
+  }
+  .newsletter-paragraph {
+    width: 90%;
+  }
+  .footer-input {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .input {
+    align-self: flex-end;
+    padding: 0.5rem 3rem;
+    width: 100%;
+  }
+  .subscribe-btn {
+    align-self: flex-end;
+  }
+}
+@media all and (max-width: 500px) {
+  .whole-page {
+    margin-top: 0.75rem;
+  }
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.6rem;
+  }
+  .top-navigation {
+    margin-bottom: 2.5rem;
+  }
+  .nav-button {
+    padding: 0.4rem 0.75rem;
+    border: 0.7px solid hsl(322, 100%, 66%);
+    font-size: 0.5rem;
+  }
+  .header-section {
+    max-width: 85%;
+  }
+  .nav-logo {
+    width: 5.25rem;
+  }
+  .header-intro {
+    font-size: 1.4rem;
+  }
+  .header-paragraph {
+    font-size: 0.7rem;
+  }
+  .statistics {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .top-backgroud-img-1,
+  .bottom-backgroud-img-1,
+  .bottom-backgroud-img-2,
+  .top-backgroud-img-2,
+  .outside-img,
+  .outside-newsletter {
+    display: none;
+  }
+  .top-backgroud-mobile-img-1,
+  .bottom-backgroud-mobile-img-1,
+  .top-backgroud-mobile-img-2,
+  .bottom-backgroud-mobile-img-2,
+  .hidden-img {
+    display: block;
+    width: 100%;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+  }
+  .card-info {
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+  }
+  .card-info-header {
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  .card-info-paragraph {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  .sign-up-header {
+    font-size: 1.4rem;
+  }
+  .sign-up {
+    margin-bottom: 4rem;
+  }
+  .footer-cover {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .hidden-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  .footer-contact-info {
+    width: 100%;
+  }
+  .input {
+    max-width: 250px;
+  }
+}
