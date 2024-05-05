@@ -63,7 +63,7 @@ html,
   align-items: center;
   max-width: 90%;
   margin: 0 auto;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
 .nav-button {
   padding: 0.8rem 1.5rem;
@@ -96,6 +96,7 @@ html,
   font-family: OpenSans-Bold;
   font-size: 2.5rem;
   max-width: 1125px;
+    margin: 0 auto;
 }
 .header-paragraph {
   min-width: 50%;
@@ -425,7 +426,7 @@ html,
     margin-bottom: 2.5rem;
   }
   .nav-button {
-    padding: 0.4rem 0.75rem;
+    padding: 0.43rem 0.78rem;
     border: 0.7px solid hsl(322, 100%, 66%);
     font-size: 0.5rem;
   }
@@ -480,10 +481,11 @@ html,
   }
   .card-info-paragraph {
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   .sign-up-header {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin: 2rem 1rem;
   }
   .sign-up {
     margin-bottom: 4rem;
