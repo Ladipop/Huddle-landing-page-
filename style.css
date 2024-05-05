@@ -312,6 +312,10 @@ html,
   display: flex;
   gap: 1rem;
 }
+.social-links a {
+  display: inline-block;
+  height: 20px;
+}
 /* ******************************************* */
 /************* Attribution Styling *********** */
 /* ***************************************** */
